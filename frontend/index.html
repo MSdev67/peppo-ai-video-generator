@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="card">
+        <h1 class="title">AI Video Generator</h1>
+        <p class="subtitle">Turn your ideas into video with the power of AI.</p>
+        
+        <div class="input-container">
+            <input type="text" id="prompt-input" placeholder="e.g., A cat wearing sunglasses, cinematic style">
+            <button id="generate-btn">Generate</button>
+        </div>
+
+        <div id="video-container" class="video-container hidden">
+            <video id="video-player" controls></video>
+        </div>
+
+        <div id="loader" class="loader-container hidden">
+            <div class="spinner"></div>
+            <p>Generating video, this may take a moment...</p>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
